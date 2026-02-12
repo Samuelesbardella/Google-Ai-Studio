@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariani: Legna e Fresca | Calore Naturale</title>
+    <meta name="description" content="Legna da ardere di alta qualità, pellet e consulenza esperta." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+            },
+            colors: {
+              wood: {
+                100: '#F5E6D3', // Beige chiaro
+                200: '#E6D0B3',
+                300: '#Cfb08a',
+                400: '#A67C52', // Legno medio
+                500: '#8B5A2B', // Rovere
+                600: '#6D4C41', // Corteccia
+                700: '#5D4037', // Legno scuro
+                800: '#4E342E',
+                900: '#3E2723', // Ebano
+              },
+              ember: {
+                400: '#FF8A65',
+                500: '#FF7043', // Arancione brace
+                600: '#F4511E',
+              },
+              parchment: '#FDFBF7',
+            },
+            boxShadow: {
+              'wood': '4px 4px 0px 0px #3E2723',
+              'wood-hover': '2px 2px 0px 0px #3E2723',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: #FDFBF7; }
+      ::-webkit-scrollbar-thumb { background: #8B5A2B; border-radius: 5px; border: 2px solid #FDFBF7; }
+      ::-webkit-scrollbar-thumb:hover { background: #6D4C41; }
+      .wood-texture { background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "@google/genai": "https://esm.sh/@google/genai@^0.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  </head>
+  <body class="bg-parchment text-wood-900 antialiased overflow-x-hidden selection:bg-ember-500 selection:text-white font-sans">
+    <div id="root"></div>
+  </body>
+</html>
